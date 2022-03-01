@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -29,5 +29,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 0,
     'react/react-in-jsx-scope': 0,
     'react/jsx-uses-react': 0,
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
 }
