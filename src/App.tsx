@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Card width="200px" height="100px" variant={CardVariant.outlined}>
-        asdfasfd1
+        asdf
       </Card>
     </div>
   )
