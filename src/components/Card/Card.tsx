@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import classes from './Card.module.css'
 export enum CardVariant {
   outlined = 'outlined',
   primary = 'primary',
@@ -15,13 +16,13 @@ const Card: FC<CardProps> = ({ width, height, variant, children }) => {
   return (
     <div
       style={{
-        width,
-        height,
+        width: width,
+        height: height,
         border: variant === CardVariant.outlined ? '1px solid gray' : 'none',
         background: variant === CardVariant.primary ? 'lightgray' : '',
       }}
     >
-      {children}
+      <div className={classes.card}>{children}</div>
     </div>
   )
 }

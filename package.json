@@ -51,6 +51,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.29.2",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typings-for-css-modules-loader": "^1.7.0"
   }
 }
