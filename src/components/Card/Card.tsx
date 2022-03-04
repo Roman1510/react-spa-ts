@@ -5,14 +5,14 @@ export enum CardVariant {
   primary = 'primary',
 }
 
-interface CardProps {
-  width?: string
+interface ICardProps {
+  width: string
   height?: string
   variant?: CardVariant
   children?: React.ReactChild | React.ReactNode
 }
 
-const Card: FC<CardProps> = ({ width, height, variant, children }) => {
+const Card: FC<ICardProps> = ({ width, height, variant, children }) => {
   return (
     <div
       style={{
