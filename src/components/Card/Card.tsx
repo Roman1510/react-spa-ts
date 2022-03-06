@@ -18,7 +18,8 @@ const Card: FC<ICardProps> = ({ width, height, variant, children }) => {
       style={{
         width: width,
         height: height,
-        border: variant === CardVariant.outlined ? '1px solid gray' : 'none',
+        border:
+          variant === CardVariant.outlined ? '1px solid gray' : '1px solid red',
         background: variant === CardVariant.primary ? 'lightgray' : '',
       }}
     >
