@@ -10,11 +10,19 @@ interface ICardProps {
   height?: string
   variant?: CardVariant
   children?: React.ReactChild | React.ReactNode
+  onClick: () => void
 }
 
-const Card: FC<ICardProps> = ({ width, height, variant, children }) => {
+const Card: FC<ICardProps> = ({
+  width,
+  height,
+  variant,
+  children,
+  onClick,
+}) => {
   return (
     <div
+      onClick={onClick}
       style={{
         width: width,
         height: height,
